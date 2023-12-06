@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_welcoming_text"
+        android:textColor="@color/beige"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:hint="@string/login_editText_hint"
+        android:inputType="text"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/sage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/password_editText_hint"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/sage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEditText"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="60dp"
+        android:layout_marginHorizontal="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintVertical_bias="0">
+
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/sage"
+            android:textColor="@color/beige"
+            android:text="@string/button_entered_name"
+            android:textSize="36sp"
+            app:cornerRadius="14dp" />
+
+        <Button
+            android:id="@+id/registrationButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/sage"
+            android:textColor="@color/beige"
+            android:text="@string/button_registration_name"
+            android:textSize="22sp"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
