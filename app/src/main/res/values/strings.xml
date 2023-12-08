@@ -2,22 +2,7 @@
     <string name="app_name">FreeFood</string>
 
     //activity_main
-    <string name="button_registration_name">Регистрация</string>
-    <string name="button_entered_name">Вход</string>
-
-    <string name="textView_welcoming_text">Войти</string>
-    <string name="login_editText_hint">Логин</string>
-    <string name="password_editText_hint">Пароль</string>
-
-    //activity_register
-    <string name="importantMemo_text_view">Обязательно к заполнению:</string>
-    <string name="surname_edit_text">Фамилия:</string>
-    <string name="name_edit_text">Имя:</string>
-    <string name="patronymic_edit_text">Отчество:</string>
-    <string name="mail_edit_text">Почта:</string>
-    <string name="height_edit_text">Рост:</string>
-    <string name="weight_edit_text">Вес:</string>
-    <string name="age_edit_text">Возраст:</string>
-    <string name="button_register_name">Зарегистрироваться</string>
-
+    <string name="bottom_nav_menu_main">Главная</string>
+    <string name="bottom_nav_menu_history">История</string>
+    <string name="bottom_nav_menu_settings">Настроки</string>
 </resources>
