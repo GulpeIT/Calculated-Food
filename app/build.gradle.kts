@@ -27,13 +27,17 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
+    // Added viewBinding
     buildFeatures{
         viewBinding = true;
     }
 }
 
 dependencies {
+    //My implementation
+    implementation ("com.google.code.gson:gson:2.8.6")
 
+    //base implementation
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

@@ -7,7 +7,7 @@
     <color name="dark_green">#5F6F52</color>
     <color name="sage">#A9B388</color>
     <color name="beige">#FEFAE0</color>
-    <color name="brown">#B99470</color>
-    
     <color name="background">#F8F0E5</color>
+
+    <color name="brown">#B99470</color>
 </resources>

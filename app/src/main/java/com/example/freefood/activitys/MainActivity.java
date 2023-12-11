@@ -1,16 +1,17 @@
-package com.example.freefood;
+package com.example.freefood.activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
+import com.example.freefood.R;
 import com.example.freefood.databinding.ActivityMainBinding;
+import com.example.freefood.fragments.HistoryFragment;
+import com.example.freefood.fragments.HomeFragment;
+import com.example.freefood.fragments.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
