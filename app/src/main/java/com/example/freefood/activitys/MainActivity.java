@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.settings){
                 replaceFragment(new SettingsFragment());
             }
-            if (item.getItemId() == R.id.history){
-                replaceFragment(new HistoryFragment());
-            }
             return true;
         });
     }

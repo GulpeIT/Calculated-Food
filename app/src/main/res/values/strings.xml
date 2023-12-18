@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">FreeFood</string>
 
-    //activity_main
+    //bottom nav menu
     <string name="bottom_nav_menu_main">Главная</string>
     <string name="bottom_nav_menu_history">История</string>
     <string name="bottom_nav_menu_settings">Настроки</string>
+    
+    //home fragment
+    <string name="text_view_calorie_content">Калорийность продукта:</string>
+
+    <string name="protein_edit_text">Белки | грамм </string>
+    <string name="fats_edit_text">Жиры | грамм</string>
+    <string name="carbohydrates_edit_text">Углеводы | грамм</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

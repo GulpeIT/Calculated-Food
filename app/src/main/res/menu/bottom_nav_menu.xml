@@ -10,12 +10,6 @@
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="@string/bottom_nav_menu_history"
-        android:id="@+id/history"
-        android:icon="@drawable/baseline_history_24"/>
-    <item
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:title="@string/bottom_nav_menu_settings"
         android:id="@+id/settings"
         android:icon="@drawable/baseline_settings_24"/>
