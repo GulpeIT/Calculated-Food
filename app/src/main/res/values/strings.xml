@@ -3,7 +3,7 @@
 
     //bottom nav menu
     <string name="bottom_nav_menu_main">Главная</string>
-    <string name="bottom_nav_menu_history">История</string>
+    <string name="bottom_nav_menu_information">Информация</string>
     <string name="bottom_nav_menu_settings">Настроки</string>
     
     //home fragment

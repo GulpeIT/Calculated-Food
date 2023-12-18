@@ -8,8 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.example.freefood.R;
-import com.example.freefood.databinding.ActivityMainBinding;
-import com.example.freefood.fragments.HistoryFragment;
 import com.example.freefood.fragments.HomeFragment;
 import com.example.freefood.fragments.SettingsFragment;
 
