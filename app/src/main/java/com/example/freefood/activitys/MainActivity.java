@@ -8,7 +8,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.example.freefood.R;
+import com.example.freefood.databinding.ActivityMainBinding;
 import com.example.freefood.fragments.HomeFragment;
+import com.example.freefood.fragments.InformationFragment;
 import com.example.freefood.fragments.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (item.getItemId() == R.id.settings){
                 replaceFragment(new SettingsFragment());
+            }
+            if (item.getItemId() == R.id.information){
+                replaceFragment(new InformationFragment());
             }
             return true;
         });
