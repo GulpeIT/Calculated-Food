@@ -17,27 +17,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_view_calorie_content"
+            android:textColor="@color/dark_green"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.1"
-            android:textColor="@color/dark_green"/>
+            app:layout_constraintVertical_bias="0.058" />
+
+        <TextView
+            android:id="@+id/textViewGram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На 100.0 грамм продукта"
+            android:textColor="@color/brown"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/additional_textView"
+            app:layout_constraintVertical_bias="0.035" />
 
         <TextView
             android:id="@+id/additional_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="16dp"
+            android:text="0.0 ккал"
+            android:textColor="@color/dark_green"
             android:textSize="48sp"
-            android:text="0"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:textColor="@color/dark_green"/>
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -55,14 +72,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/dark_green"
                 android:ems="12"
-                android:hint="@string/protein_edit_text"
+                android:hint="Белки"
                 android:inputType="numberDecimal"
-                android:textSize="32sp"
                 android:textColor="@color/dark_green"
-                android:textColorHint="@color/dark_green"
                 android:textColorHighlight="@color/sage"
-                android:backgroundTint="@color/dark_green"/>
+                android:textColorHint="@color/dark_green"
+                android:textSize="32sp" />
 
             <EditText
                 android:id="@+id/fatsEditText"
@@ -70,14 +87,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/dark_green"
                 android:ems="12"
-                android:hint="@string/fats_edit_text"
+                android:hint="Жиры"
                 android:inputType="numberDecimal"
-                android:textSize="32sp"
                 android:textColor="@color/dark_green"
-                android:textColorHint="@color/dark_green"
                 android:textColorHighlight="@color/sage"
-                android:backgroundTint="@color/dark_green"/>
+                android:textColorHint="@color/dark_green"
+                android:textSize="32sp" />
 
             <EditText
                 android:id="@+id/carbohydratesEditText"
@@ -85,15 +102,43 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/dark_green"
                 android:ems="12"
-                android:hint="@string/carbohydrates_edit_text"
+                android:hint="Углеводы"
                 android:inputType="numberDecimal"
-                android:textSize="32sp"
                 android:textColor="@color/dark_green"
-                android:textColorHint="@color/dark_green"
                 android:textColorHighlight="@color/sage"
-                android:backgroundTint="@color/dark_green"/>
+                android:textColorHint="@color/dark_green"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/gramEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="12"
+                android:hint="Граммы"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_green"
+                android:textColorHighlight="@color/sage"
+                android:textColorHint="@color/dark_green"
+                android:textSize="32sp" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/addHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/brown"
+            android:text="+"
+            android:textColor="@color/beige"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
