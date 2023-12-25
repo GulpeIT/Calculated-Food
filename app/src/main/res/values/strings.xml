@@ -4,7 +4,7 @@
     //bottom nav menu
     <string name="bottom_nav_menu_main">Главная</string>
     <string name="bottom_nav_menu_information">Информация</string>
-    <string name="bottom_nav_menu_settings">Настроки</string>
+    <string name="bottom_nav_menu_settings">Настройки</string>
     
     //home fragment
     <string name="text_view_calorie_content">Калорийность продукта:</string>

@@ -26,12 +26,26 @@
             android:textColor="@color/dark_green"/>
 
         <TextView
+            android:id="@+id/textViewGram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На 100 грам продукта"
+            android:textColor="@color/brown"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/additional_textView"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <TextView
             android:id="@+id/additional_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:textSize="48sp"
-            android:text="0"
+            android:text="0.0 ккал"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -56,7 +70,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:ems="12"
-                android:hint="@string/protein_edit_text"
+                android:hint="Белки"
                 android:inputType="numberDecimal"
                 android:textSize="32sp"
                 android:textColor="@color/dark_green"
@@ -71,7 +85,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:ems="12"
-                android:hint="@string/fats_edit_text"
+                android:hint="Жиры"
                 android:inputType="numberDecimal"
                 android:textSize="32sp"
                 android:textColor="@color/dark_green"
@@ -86,13 +100,28 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="10dp"
                 android:ems="12"
-                android:hint="@string/carbohydrates_edit_text"
+                android:hint="Углеводы"
                 android:inputType="numberDecimal"
                 android:textSize="32sp"
                 android:textColor="@color/dark_green"
                 android:textColorHint="@color/dark_green"
                 android:textColorHighlight="@color/sage"
                 android:backgroundTint="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/gramEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/dark_green"
+                android:ems="12"
+                android:hint="Граммы"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_green"
+                android:textColorHighlight="@color/sage"
+                android:textColorHint="@color/dark_green"
+                android:textSize="32sp" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
